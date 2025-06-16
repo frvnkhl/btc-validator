@@ -1,0 +1,34 @@
+{
+  "name": "btc-validator",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/esm/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc && tsc --module es2020 --outDir dist/esm",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bitcoin",
+    "address",
+    "validator",
+    "utility"
+  ],
+  "author": "elFranquito",
+  "license": "ISC",
+  "description": "A simple library for validating Bitcoin addresses.",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}

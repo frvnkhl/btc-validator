@@ -25,7 +25,11 @@
     "utility"
   ],
   "author": "elFranquito",
-  "license": "ISC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frvnkhl/btc-validator.git"
+  },
   "description": "A simple library for validating Bitcoin addresses.",
   "devDependencies": {
     "ts-node": "^10.9.2",
